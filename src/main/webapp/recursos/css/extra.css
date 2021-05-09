@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.banner {
+	background: url("https://validatedlearning.co/wp-content/uploads/2017/08/green-geo-background-banner.jpeg");
+	background-size: 100% 100%;
+}
+
+.fondo {
+	background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLqN-4UXyIurCbh4xWv9WLgZnViWm6TF-ZCg&usqp=CAU");
+	background-size: 100% 100%;
+}
