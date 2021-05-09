@@ -1,14 +1,20 @@
 package app.modelos;
 
-public class Usuario {
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Usuario implements Serializable {
 
 	private String cedula;
 	private String nombre;
 	private String apellido;
 	private String correo;
 	private String contrasena;
+	private List<Telefono> telefonos;
 
 	public Usuario() {
+		telefonos = new ArrayList<>();
 	}
 	
 	public String getCedula() {
@@ -49,6 +55,14 @@ public class Usuario {
 	
 	public void setContrasena(String contrasena) {
 		this.contrasena = contrasena;
+	}
+	
+	public List<Telefono> getTelefonos() {
+		return telefonos;
+	}
+	
+	public void setTelefonos(List<Telefono> telefonos) {
+		this.telefonos = telefonos;
 	}
 	
 	@Override

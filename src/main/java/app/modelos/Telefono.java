@@ -1,6 +1,8 @@
 package app.modelos;
 
-public class Telefono {
+import java.io.Serializable;
+
+public class Telefono implements Serializable {
 
 	private int codigo;
 	private String numero;
