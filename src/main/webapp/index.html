@@ -8,21 +8,21 @@
 		crossorigin="anonymous">
 	<link rel="stylesheet" href="recursos/css/extra.css">
 </head>
-<body class="container-fluid">
+<body class="container-fluid fondo">
 	<div class="row banner justify-content-center">
 		<div class="col">
 			<img class="img-fluid" src="recursos/logo-ups.png">
 		</div>
 		<div class="col my-auto">
-			<form class="form-group form-inline" action="" method="post">
-				<input class="form-control w-75 text-center" id="buscar" type="text" 
+			<form class="form-group form-inline" action="/Practica02/buscar-telefonos" method="post">
+				<input class="form-control w-75 text-center" name="filtro" type="text" 
 					placeholder="Buscar teléfonos de un usuario por número de teléfono/cédula"
 					onkeypress="return esNumero(event)" maxlength="15" required>
 				<input class="btn btn-secondary ml-2" type="submit" value="Buscar">
 			</form>
 		</div>
 	</div>
-	<div class="row fondo justify-content-center">
+	<div class="row fondo justify-content-center h-75 align-items-center">
 		<div class="col">
 			<div class="row">
 				<div class="col">
@@ -39,8 +39,8 @@
 					<a class="btn btn-primary d-block w-50 mx-auto my-3" 
 						href="iniciar-sesión.html">Iniciar sesión</a>
 				</div>
-				<div class="col">
-					<img class="img-fluid d-block w-75 h-75 my-5 mx-auto" 
+				<div class="col mt-3">
+					<img class="img-fluid d-block w-75 h-75 mx-auto" 
 						src="https://www.pandasecurity.com/es/mediacenter/src/uploads/2016/02/PandaSecurity-servicios-online-Evernote-1024x1024.jpg">
 				</div>
 			</div>

@@ -1,4 +1,4 @@
-package app.datos;
+package app.daos;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -54,7 +54,7 @@ public class TelefonoDAO {
 		BaseDatos.ejecutarSentencia(sql);
 	}
 	
-	public List<Telefono> listarConFiltro(String filtro) {
+	public List<Telefono> listar(String filtro) {
 		List<Telefono> telefonos = new ArrayList<>();
 		String sql = "SELECT * FROM telefonos WHERE numero = '" + filtro + "'" +
 					 "OR usuario_cedula = '" + filtro + "'";

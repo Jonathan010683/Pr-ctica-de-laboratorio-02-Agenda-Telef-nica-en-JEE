@@ -1,4 +1,4 @@
-package app.datos;
+package app.daos;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -30,7 +30,7 @@ public class UsuarioDAO {
 				usuario.setApellido(resultado.getString("apellido"));
 				usuario.setCorreo(resultado.getString("correo"));
 				usuario.setContrasena(resultado.getString("contrasena"));
-				usuario.setTelefonos(telefonoDAO.listarConFiltro(cedula));
+				usuario.setTelefonos(telefonoDAO.listar(cedula));
 			}
 			resultado.close();
 		} catch (SQLException e) {
