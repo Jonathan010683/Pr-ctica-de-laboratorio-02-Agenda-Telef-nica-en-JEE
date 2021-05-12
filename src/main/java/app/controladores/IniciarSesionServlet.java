@@ -23,10 +23,11 @@ public class IniciarSesionServlet extends HttpServlet {
 		if (request.getSession().getAttribute("usuario") != null) {
 			response.sendRedirect("/Practica02/ver-telefonos");
 		} else {
-			response.sendRedirect("/Practica02/login.html");
+			response.sendRedirect("/Practica02/login.jsp");
 		}
 	}
 	
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		HttpSession sesion = request.getSession();
@@ -37,15 +38,17 @@ public class IniciarSesionServlet extends HttpServlet {
 			if (usuario.getCorreo().equals(correo) && usuario.getContrasena().equals(contrasena)) {
 				sesion.setAttribute("usuario", usuario);
 				response.sendRedirect("/Practica02/ver-telefonos");
+				return;
 			} else {
 				sesion.setAttribute("usuario", null);
-				System.out.println("ERROR: La clave es incorrecta");
-				response.sendRedirect("/Practica02/login.html");
+				request.setAttribute("mensaje", "La clave es incorrecta.");
+				request.setAttribute("tipoMensaje", "error");
 			}
 		} else {
 			sesion.setAttribute("usuario", null);
-			System.out.println("ERROR: El usuario no existe");
-			response.sendRedirect("/Practica02/login.html");
+			request.setAttribute("mensaje", "No existe ningún usuario con este correo.");
+			request.setAttribute("tipoMensaje", "error");
 		}
+		request.getRequestDispatcher("/login.jsp").forward(request, response);
 	}
 }

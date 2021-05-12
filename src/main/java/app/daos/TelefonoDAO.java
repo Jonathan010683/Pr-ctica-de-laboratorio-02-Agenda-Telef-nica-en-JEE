@@ -12,14 +12,14 @@ public class TelefonoDAO {
 	public TelefonoDAO() {
 	}
 	
-	public void agregar(Telefono telefono, String cedulaUsuario) {
+	public void agregar(Telefono telefono, String cedulaUsuario) throws Exception {
 		String sql = "INSERT INTO telefonos(numero, tipo, operadora, usuario_cedula) VALUES('" + 
 				      telefono.getNumero() + "', '" + telefono.getTipo() + "', '" +
 				      telefono.getOperadora() + "', '" + cedulaUsuario + "')";
 		BaseDatos.ejecutarSentencia(sql);
 	}
 	
-	public void modificar(Telefono telefono) {
+	public void modificar(Telefono telefono) throws Exception {
 		String sql = "UPDATE telefonos SET " +
 					 "numero = '" + telefono.getNumero() + "'," +
 					 "tipo = '" + telefono.getTipo() + "'," + 
@@ -49,7 +49,7 @@ public class TelefonoDAO {
 		return telefono;
 	}
 
-	public void eliminar(Integer codigo) {
+	public void eliminar(Integer codigo) throws Exception {
 		String sql = "DELETE FROM telefonos WHERE codigo = " + codigo;
 		BaseDatos.ejecutarSentencia(sql);
 	}

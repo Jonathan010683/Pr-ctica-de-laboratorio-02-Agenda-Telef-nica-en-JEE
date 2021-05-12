@@ -16,10 +16,11 @@ import javax.servlet.http.HttpSession;
  * Servlet Filter implementation class FiltroSesion
  */
 @WebFilter({
-	"/ver-telefonos",
-	"/crear-telefono",
-	"/modificar-telefono",
-	"/eliminar-telefono"
+	"/ver-telefonos", "/ver-telefonos.jsp",
+	"/crear-telefono", "/crear-telefono.jsp",
+	"/modificar-telefono", "/modificar-telefono.jsp",
+	"/eliminar-telefono",
+	"/cerrar-sesion"
 })
 public class FiltroSesion implements Filter {
 
@@ -33,7 +34,7 @@ public class FiltroSesion implements Filter {
 		if (sesion.getAttribute("usuario") != null)
 			chain.doFilter(request, response);
 		else {
-			((HttpServletResponse) response).sendRedirect("/Practica02/login.html");
+			((HttpServletResponse) response).sendRedirect("/Practica02/login.jsp");
 		}
 	}
 }

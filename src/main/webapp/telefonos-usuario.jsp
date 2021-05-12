@@ -16,38 +16,20 @@
 		<div class="col">
 			<div class="row banner">
 				<div class="col my-3">
-					<a class="btn btn-primary ml-2 float-right" style="width: 15%;"
-						href="/Practica02/cerrar-sesion">Cerrar sesión</a>
 					<a class="btn btn-light float-right" style="width: 15%;"
 						href="index.html">Página principal</a>
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col">
-					<c:set var="telefonos" scope="session" value="${usuario.telefonos}"/>
-					<c:set var="mensaje" scope="request" value="${mensaje}"/>
-					<c:set var="tipoMensaje" scope="request" value="${tipoMensaje}"/>
-					<h1 class="text-center text-light my-3">Teléfonos de ${usuario}</h1>
-					<c:if test="${mensaje}">
-						<div class="alert alert-danger alert-dismissible w-25 mt-3 mx-auto" 
-							role="alert">
-  							<label id="alerta">${mensaje}</label>
-  							<button type="button" class="close" data-dismiss="alert" 
-  								aria-label="Close">
-    							<span aria-hidden="true">&times;</span>
-  							</button>
-						</div>
-					</c:if>
+					<c:set var="telefonos" scope="session" value="${telefonosEncontrados}"/>
+					<h1 class="text-center text-light my-3">Teléfonos encontrados</h1>
 					<table class="table table-hover">
 						<thead class="thead-dark">
 							<tr>
 								<th class="text-center" scope="col">Número</th>
 								<th class="text-center" scope="col">Tipo</th>
 								<th class="text-center" scope="col">Operadora</th>
-								<th class="text-center" scope="col">
-									<a class="btn btn-light d-inline" style="width: 15%;"
-										href="/Practica02/crear-telefono.jsp">Agregar</a>
-								</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -56,12 +38,6 @@
 									<td class="text-light text-center">${telefono.numero}</td>
 									<td class="text-light text-center">${telefono.tipo}</td>
 									<td class="text-light text-center">${telefono.operadora}</td>
-									<td class="text-center">
-										<a class="btn btn-warning"
-											href="/Practica02/modificar-telefono?id=${telefono.codigo}">Modificar</a>
-										<a class="btn btn-danger"
-											href="/Practica02/eliminar-telefono?id=${telefono.codigo}">Eliminar</a>
-									</td>
 								</tr>
 							</c:forEach>
 						</tbody>

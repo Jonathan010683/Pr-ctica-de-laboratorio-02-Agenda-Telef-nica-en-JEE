@@ -40,7 +40,7 @@ public class BaseDatos {
 		}
 	}
 	
-	public static void ejecutarSentencia(String sql) {
+	public static void ejecutarSentencia(String sql) throws Exception {
 		try {
 			abrirConexion();
 			sentencia = conexion.createStatement();
@@ -50,10 +50,9 @@ public class BaseDatos {
 			cerrarConexion();
 		} catch (SQLException e) {
 			revertirCambios();
-			System.out.println("ERROR DB: No se ha podido ejecutar la sentencia SQL.");
-			System.out.println("Sentncia SQL: " + sql);
+			System.out.println("Sentencia SQL: " + sql);
 			System.out.println(e.getCause());
-			e.printStackTrace();
+			throw new Exception("ERROR DB: No se ha podido ejecutar la sentencia SQL.");
 		}
 	}
 	
@@ -67,7 +66,7 @@ public class BaseDatos {
 			sentencia.close();
 			cerrarConexion();
 		} catch (SQLException e) {
-			System.out.println("ERROR DB: No se ha podido ejecuta la consulta SQL.");
+			System.out.println("ERROR DB: No se ha podido ejecutar la consulta SQL.");
 			System.out.println("Consulta SQL: " + sql);
 			System.out.println(e.getCause());
 			e.printStackTrace();

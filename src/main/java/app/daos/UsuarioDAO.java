@@ -9,7 +9,7 @@ public class UsuarioDAO {
 	public UsuarioDAO() {
 	}
 	
-	public void agregar(Usuario usuario) {
+	public void agregar(Usuario usuario) throws Exception {
 		String sql = "INSERT INTO usuarios(cedula, nombre, apellido, correo, contrasena) VALUES('" +
 					  usuario.getCedula() + "', '" + usuario.getNombre() + "', '" + 
 				      usuario.getApellido() + "', '" + usuario.getCorreo() + "', '" +
