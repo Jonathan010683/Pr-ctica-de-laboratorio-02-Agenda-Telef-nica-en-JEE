@@ -34,7 +34,7 @@ public class FiltroSesion implements Filter {
 		if (sesion.getAttribute("usuario") != null)
 			chain.doFilter(request, response);
 		else {
-			((HttpServletResponse) response).sendRedirect("/Practica02/login.jsp");
+			((HttpServletResponse) response).sendRedirect("/pruebaPagina02/login.jsp");
 		}
 	}
 }

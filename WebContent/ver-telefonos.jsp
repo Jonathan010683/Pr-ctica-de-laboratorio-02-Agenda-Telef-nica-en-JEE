@@ -17,7 +17,7 @@
 			<div class="row banner">
 				<div class="col my-3">
 					<a class="btn btn-primary ml-2 float-right" style="width: 15%;"
-						href="/Practica02/cerrar-sesion">Cerrar sesión</a>
+						href="/pruebaPagina02/cerrar-sesion">Cerrar sesión</a>
 					<a class="btn btn-light float-right" style="width: 15%;"
 						href="index.html">Página principal</a>
 				</div>
@@ -46,7 +46,7 @@
 								<th class="text-center" scope="col">Operadora</th>
 								<th class="text-center" scope="col">
 									<a class="btn btn-light d-inline" style="width: 15%;"
-										href="/Practica02/crear-telefono.jsp">Agregar</a>
+										href="/pruebaPagina02/crear-telefono.jsp">Agregar</a>
 								</th>
 							</tr>
 						</thead>
@@ -58,9 +58,9 @@
 									<td class="text-light text-center">${telefono.operadora}</td>
 									<td class="text-center">
 										<a class="btn btn-warning"
-											href="/Practica02/modificar-telefono?id=${telefono.codigo}">Modificar</a>
+											href="/pruebaPagina02/modificar-telefono?id=${telefono.codigo}">Modificar</a>
 										<a class="btn btn-danger"
-											href="/Practica02/eliminar-telefono?id=${telefono.codigo}">Eliminar</a>
+											href="/pruebaPagina02/eliminar-telefono?id=${telefono.codigo}">Eliminar</a>
 									</td>
 								</tr>
 							</c:forEach>

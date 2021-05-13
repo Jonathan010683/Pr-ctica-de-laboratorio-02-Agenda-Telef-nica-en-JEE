@@ -27,6 +27,6 @@ public class VerTelefonosServlet extends HttpServlet {
 		Usuario usuario = (Usuario) sesion.getAttribute("usuario");
     	usuario = new UsuarioDAO().buscarPorCedula(usuario.getCedula());
     	sesion.setAttribute("usuario", usuario);
-    	response.sendRedirect("/Practica02/ver-telefonos.jsp");
+    	response.sendRedirect("/pruebaPagina02/ver-telefonos.jsp");
 	}
 }

@@ -21,9 +21,9 @@ public class IniciarSesionServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
 		if (request.getSession().getAttribute("usuario") != null) {
-			response.sendRedirect("/Practica02/ver-telefonos");
+			response.sendRedirect("/pruebaPagina02/ver-telefonos");
 		} else {
-			response.sendRedirect("/Practica02/login.jsp");
+			response.sendRedirect("/pruebaPagina02/login.jsp");
 		}
 	}
 	
@@ -37,7 +37,7 @@ public class IniciarSesionServlet extends HttpServlet {
 		if (usuario != null) {
 			if (usuario.getCorreo().equals(correo) && usuario.getContrasena().equals(contrasena)) {
 				sesion.setAttribute("usuario", usuario);
-				response.sendRedirect("/Practica02/ver-telefonos");
+				response.sendRedirect("/pruebaPagina02/ver-telefonos");
 				return;
 			} else {
 				sesion.setAttribute("usuario", null);

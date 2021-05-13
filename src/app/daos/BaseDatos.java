@@ -12,11 +12,11 @@ public class BaseDatos {
 	private static Statement sentencia;
 	
 	private static void abrirConexion() {
-		String URL = "jdbc:mariadb://localhost:3306/test";
-		String USUARIO = "admin";
-		String CLAVE = "admin";
+		String URL = "jdbc:mysql://localhost:3306/jee";
+		String USUARIO = "root";
+		String CLAVE = "cuenca";
 		try {
-			Class.forName("org.mariadb.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			conexion = DriverManager.getConnection(URL, USUARIO, CLAVE);
 			conexion.setAutoCommit(false);
 		} catch (ClassNotFoundException e) {
@@ -30,7 +30,7 @@ public class BaseDatos {
 		}
 	}
 	
-	private static void cerrarConexion() {
+	public static void cerrarConexion() {
 		try {
 			conexion.close();
 		} catch (SQLException e) {
@@ -63,8 +63,8 @@ public class BaseDatos {
 			sentencia  = conexion.createStatement();
 			resultado = sentencia.executeQuery(sql);
 			resultado.setFetchDirection(ResultSet.FETCH_FORWARD);
-			sentencia.close();
-			cerrarConexion();
+			//sentencia.close();
+			//cerrarConexion();
 		} catch (SQLException e) {
 			System.out.println("ERROR DB: No se ha podido ejecutar la consulta SQL.");
 			System.out.println("Consulta SQL: " + sql);

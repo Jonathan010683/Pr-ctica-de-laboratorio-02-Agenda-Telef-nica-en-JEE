@@ -33,7 +33,7 @@ public class EliminarTelefonoServlet extends HttpServlet {
 				if (telefono.getCodigo() == codigo) {
 					try {
 						new TelefonoDAO().eliminar(codigo);
-						response.sendRedirect("/Practica02/ver-telefonos");
+						response.sendRedirect("/pruebaPagina02/ver-telefonos");
 					} catch (Exception e) {
 						request.setAttribute("mensaje", "No se ha podido eliminar el telefono.");
 						request.getRequestDispatcher("/ver-telefonos").forward(request, response);
@@ -42,7 +42,7 @@ public class EliminarTelefonoServlet extends HttpServlet {
 				}
 			}
 		} else {
-			response.sendRedirect("/Practica02/ver-telefonos");
+			response.sendRedirect("/pruebaPagina02/ver-telefonos");
 		}
 	}
 }

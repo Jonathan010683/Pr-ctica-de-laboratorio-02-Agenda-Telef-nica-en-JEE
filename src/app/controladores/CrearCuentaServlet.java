@@ -22,7 +22,7 @@ public class CrearCuentaServlet extends HttpServlet {
     @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-    	response.sendRedirect("/Practica02/crear-cuenta.jsp");
+    	response.sendRedirect("/pruebaPagina02/crear-cuenta.jsp");
 	}
 
     @Override

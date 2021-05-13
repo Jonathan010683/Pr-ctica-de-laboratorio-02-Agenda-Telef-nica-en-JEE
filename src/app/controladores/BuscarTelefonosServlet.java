@@ -24,7 +24,7 @@ public class BuscarTelefonosServlet extends HttpServlet {
     @Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) 
 			throws ServletException, IOException {
-		response.sendRedirect("/Practica02/index.html");
+		response.sendRedirect("/pruebaPagina02/index.html");
 	}
     
     @Override
@@ -33,10 +33,10 @@ public class BuscarTelefonosServlet extends HttpServlet {
 		String filtro = request.getParameter("filtro");
 		List<Telefono> telefonos = new TelefonoDAO().listar(filtro);
 		if (telefonos.size() > 0) {
-			request.setAttribute("telefonosEncontrado", telefonos);
+			request.setAttribute("telefonosEncontrados", telefonos);
 			request.getRequestDispatcher("/telefonos-usuario.jsp").forward(request, response);
 		} else {
-			response.sendRedirect("/Practica02/no-encontrado.html");
+			response.sendRedirect("/pruebaPagina02/no-encontrado.html");
 		}
 	}
 }

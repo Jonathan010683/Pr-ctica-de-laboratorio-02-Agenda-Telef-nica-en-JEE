@@ -31,12 +31,12 @@ public class ModificarTelefonoServlet extends HttpServlet {
 			for (Telefono telefono: usuario.getTelefonos()) {
 				if (telefono.getCodigo() == codigo) {
 					sesion.setAttribute("telefonoModificar", telefono);
-					response.sendRedirect("/Practica02/modificar-telefono.jsp");
+					response.sendRedirect("/pruebaPagina02/modificar-telefono.jsp");
 					break;
 				}
 			}
 		} else {
-			response.sendRedirect("/Practica02/ver-telefonos");
+			response.sendRedirect("/pruebaPagina02/ver-telefonos");
 		}
 	}
 

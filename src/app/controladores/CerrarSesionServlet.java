@@ -19,7 +19,7 @@ public class CerrarSesionServlet extends HttpServlet {
 		HttpSession sesion = request.getSession();
 		if (sesion.getAttribute("usuario") != null) {
 			sesion.invalidate();
-			response.sendRedirect("/Practica02/index.html");
+			response.sendRedirect("/pruebaPagina02/index.html");
 		}
 	}
 }

@@ -56,7 +56,9 @@ public class UsuarioDAO {
 				usuario.setContrasena(resultado.getString("contrasena"));
 				usuario.setTelefonos(telefonoDAO.listar(resultado.getString("cedula")));
 			}
+			
 			resultado.close();
+			BaseDatos.cerrarConexion();
 		} catch (SQLException e) {
 			System.out.println("ERROR DB: Ha ocurrido un problema al buscar el usuario especificado.");
 			System.out.println(e.getCause());
