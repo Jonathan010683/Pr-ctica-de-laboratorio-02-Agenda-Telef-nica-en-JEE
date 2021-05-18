@@ -12,4 +12,17 @@ El usuario “Juanito” tiene los teléfonos 0998121212 de tipo celular y opera
 ## DIAGRAMA
 <div align="center"><img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/diagrama.PNG" /></div>
 
+## ACTIVIDADES POR DESARROLLAR
+1. Crear un repositorio en GitHub con el nombre “Práctica de laboratorio 02: Agenda Telefónica en JEE”
+  <div align="center"><a href="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE">Link de Github</a></div>
+3. Desarrollar una aplicación con tecnología JEE para gestionar requerimientos de compra en la web.
+4. Realizar varios commits en la herramienta GitHub que demuestren el desarrollo de la aplicación.
+5. Generar el informe de la práctica con el desarrollo de cada uno de los puntos descritos anteriormente.
+6. Implementar el README del repositorio del proyecto con la misma información del informe de la práctica
+7. Subir al AVAC el informe del proyecto en formato *.pdf. El informe debe contar con conclusiones apropiadas
+y la firma de cada estudiante
+
+## RESULTADO(S) OBTENIDO(S):
+# Interfaces  de Login
+Interface de login  de Agenda telefonico
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/login.PNG" />
