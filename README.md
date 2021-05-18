@@ -1,4 +1,4 @@
-# Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE
+# Practica de laboratorio 02 Agenda Telefonica en JEE
 ## Desarrollo de una aplicación JEE basado en Servlets, JSP y JDBC para el intercambio de datos en un modelo de tres capas aplicando los patrones diseño de software MVC y DAO
 
 ## OBJETIVOS
