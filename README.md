@@ -24,5 +24,6 @@ y la firma de cada estudiante
 
 ## RESULTADO(S) OBTENIDO(S):
 # Interfaces  de Login
-Interface de login  de Agenda telefonico
+Interface principal de Agenda Telefonico <br>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/login.PNG" />
+
