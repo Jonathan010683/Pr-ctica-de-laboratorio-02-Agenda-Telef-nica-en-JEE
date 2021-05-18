@@ -23,7 +23,9 @@ El usuario “Juanito” tiene los teléfonos 0998121212 de tipo celular y opera
 y la firma de cada estudiante
 
 ## RESULTADO(S) OBTENIDO(S):
-# Interfaces  de Login
+# Interfas  de Login
 Interface principal de Agenda Telefonico <br>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/login.PNG" />
+# Interfas de Iniciar Sesion
+<img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/iniciarsesion.PNG" />
 
