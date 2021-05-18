@@ -39,3 +39,4 @@ Ingrese los campos que piden para crear una cuenta<br>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/buscar.PNG" />
 # Interfas Modificar
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/modificar.PNG" />
+
