@@ -39,3 +39,9 @@ Ingrese los campos que piden para crear una cuenta<br>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/buscar.PNG" />
 <h2>Interfas Modificar</h2>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/modificar.PNG" />
+<h2>Interfas Crear Telefono</h2>
+<img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/agregarTele.PNG" />
+<h2>Interfas del boton de correo</h2>
+<img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/botonCorre.PNG" />
+<h2>Interfas del boton de llamar</h2>
+<img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/llamar.PNG" />
