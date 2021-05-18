@@ -35,7 +35,7 @@ Ingrese los campos que piden para crear una cuenta<br>
 # Interfas de Iniciar Sesion con cuenta
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/isCuenta.PNG" />
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/isCuentaEsteban.PNG" /><br>
-<h4> Interfas buscar telefonos por cedula y por numero</h4>
+<h2> Interfas buscar telefonos por cedula y por numero</h2>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/buscar.PNG" />
-<h4>Interfas Modificar</h4>
+<h2>Interfas Modificar</h2>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/modificar.PNG" />
