@@ -45,3 +45,6 @@ Ingrese los campos que piden para crear una cuenta<br>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/botonCorre.PNG" />
 <h2>Interfas del boton de llamar</h2>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/llamar.PNG" />
+
+<h2>Conclusion</h2>
+Mediante el presente trabajo se consiguió desarrollar un sistema de agenda telefonica básico, el cual permite realizar las acciones CRUD necesarias para Usuario y Telefono. La integración de las tecnologías de Java EE como JSP y JSTL con los servlets permiten añadir mayor robustez. Además, es importante que para el apartado de seguridad el uso de filtros permite disminuir las amenazas de seguridad. 
