@@ -10,6 +10,6 @@ Se pide desarrollar una aplicación JEE que permita implementar una agenda telef
 El usuario “Juanito” tiene los teléfonos 0998121212 de tipo celular y operadora Movistar; así como también tiene asignado el teléfono 0728222111 de tipo convencional y     operador CNT.
 
 ## DIAGRAMA
-<center><img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/diagrama.PNG" /></center>
+<div align="center"><img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/diagrama.PNG" /></div>
 
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/login.PNG" />
