@@ -27,5 +27,11 @@ y la firma de cada estudiante
 Interface principal de Agenda Telefonico <br>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/login.PNG" />
 # Interfas de Iniciar Sesion
+Para iniciar sesion se necesita el Correo y la contraseña para iniciar sesion<br>
 <img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/iniciarsesion.PNG" />
+# Interfas de Crear Cuenta
+Ingrese los campos que piden para crear una cuenta<br>
+<img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/crearcuenta.PNG" />
+# Interfas de Iniciar Sesion con cuenta
+<img src="https://github.com/Jonathan010683/Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE/blob/master/isCuenta.PNG" />
 
